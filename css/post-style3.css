@@ -1,0 +1,120 @@
+.footer {
+    margin-top: 100px;
+
+}
+
+.footer .container {
+    width: 100%;
+    height: 350px;
+    background-color: #34568b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer .container .subscribe {
+    width: 100%;
+    background-color: #00378A;
+    min-height: 180px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer .container .subscribe div h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.footer .container .subscribe .input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0px 10px 0px 10px;
+    margin-bottom: 10px;
+}
+
+.footer .container .subscribe input[type="text"] {
+    flex: 2;
+    padding: 10px 15px;
+    border: 2px solid #34568b;
+    border-radius: 10px;
+    outline: none;
+    background-color: rgb(255, 255, 255);
+}
+
+button {
+    flex: 1;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    transition: 0.3s;
+    background-color: white;
+    color: #34568b;
+    width: 300px;
+}
+
+button:hover {
+    background-color: #34568b;
+    color: white;
+    border: #34568b solid 1px;
+}
+
+#author {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .footer .container .subscribe .input {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .footer .container .subscribe div h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .footer .container .subscribe input[type="text"] {
+        width: 100%;
+    }
+}
+
+.footer .container .social-media {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.footer .container .social-media i {
+    font-size: 24px;
+    margin: 0 10px;
+    transition: 0.3s;
+    cursor: pointer;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    border: 1px solid transparent;
+
+
+}
+
+.footer .container .social-media i:hover {
+    color: #000;
+}
