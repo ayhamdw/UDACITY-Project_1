@@ -80,8 +80,17 @@ ul li a {
 }
 
 .nav-bar .social-media i {
-    color: #34568b
+    color: #34568b;
+    cursor: pointer;
+    font-size: 24px;
+    transition: 0.5s;
 }
+
+.nav-bar .social-media i:hover {
+    color: black;
+}
+
+
 
 
 .nav-bar input[type="text"] {
