@@ -155,7 +155,7 @@ body>h1 {
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    transition: 0.3s ease;
 }
 
 .second-section .container .card:hover {
@@ -202,6 +202,8 @@ body>h1 {
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 20px;
     justify-items: center;
+    margin-bottom: 50px;
+    margin-top: 100px;
 }
 
 .third-section .sport-part {
@@ -249,14 +251,12 @@ body>h1 {
     color: #0f0f0f;
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
     .third-section .sport-part .box .box-content h2 {
         font-size: 12px;
     }
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     .third-section .sport-part .box .box-content h2 {
         font-size: 14px;
@@ -280,7 +280,133 @@ body>h1 {
     }
 }
 
-/* Small Screen Styles */
+
+
+/*Footer*/
+
+.footer {
+    margin-top: 100px;
+
+}
+
+.footer .container {
+    width: 100%;
+    height: 350px;
+    background-color: #34568b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer .container .subscribe {
+    width: 100%;
+    background-color: #00378A;
+    min-height: 180px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer .container .subscribe div h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.footer .container .subscribe .input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0px 10px 0px 10px;
+    margin-bottom: 10px;
+}
+
+.footer .container .subscribe input[type="text"] {
+    flex: 2;
+    padding: 10px 15px;
+    border: 2px solid #34568b;
+    border-radius: 10px;
+    outline: none;
+    background-color: rgb(255, 255, 255);
+}
+
+button {
+    flex: 1;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    transition: 0.3s;
+    background-color: white;
+    color: #34568b;
+    width: 300px;
+}
+
+button:hover {
+    background-color: #34568b;
+    color: white;
+    border: #34568b solid 1px;
+}
+
+#author {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .footer .container .subscribe .input {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .footer .container .subscribe div h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .footer .container .subscribe input[type="text"] {
+        width: 100%;
+    }
+}
+
+.footer .container .social-media {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.footer .container .social-media i {
+    font-size: 24px;
+    margin: 0 10px;
+    transition: 0.3s;
+    cursor: pointer;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    border: 1px solid transparent;
+
+
+}
+
+.footer .container .social-media i:hover {
+    color: #000;
+}
+
+
+/* Small Screen */
 @media (max-width: 767px) {
     .nav-bar .container {
         display: flex;
