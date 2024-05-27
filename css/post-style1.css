@@ -1,0 +1,48 @@
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px
+}
+
+.profile .image {
+    margin-top: 20px;
+    width: 70px;
+    border: 1px solid transparent;
+}
+
+.profile .image img {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.profile span {
+    font-weight: bold;
+}
+
+.first-post-section .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.first-post-section .container p {
+    color: #838383;
+}
+
+.first-post-section .container .post-image {
+    width: 100%;
+    max-height: 500px;
+}
+
+.first-post-section .container .post-image img {
+    width: auto;
+    height: 100%;
+    background-size: cover;
+}
