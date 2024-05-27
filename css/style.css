@@ -1,7 +1,9 @@
+/* Global Styles */
 * {
     box-sizing: border-box;
 }
 
+/* Container Styles */
 .container {
     padding-left: 15px;
     padding-right: 15px;
@@ -12,7 +14,7 @@
 @media (min-width: 768px) {
     .container {
         width: 750px;
-    }   
+    }
 }
 
 @media (min-width: 992px) {
@@ -25,26 +27,26 @@
     .container {
         width: 1170px;
     }
-
-    
 }
+
+/* Navigation Bar Styles */
 .nav-bar {
     border-bottom: rgb(204, 204, 204) solid 1px;
 }
+
 .nav-bar .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     min-height: 60px;
-    
 }
 
 .nav-bar h2 {
     font-size: 30px;
     font-family: "Poppins", sans-serif;
-    
 }
+
 .nav-bar .social-media {
     display: flex;
     gap: 15px;
@@ -64,14 +66,69 @@
     border: 2px solid rgba(179, 179, 179, 0.199);
     transition: 0.3s;
 }
-/*Small Screen*/
 
+/* First Content */
+body>h1 {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    text-align: center;
+}
+
+.container .first-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    flex-wrap: wrap;
+    font-family: "Poppins", sans-serif;
+}
+
+.container .first-content span {
+    color: #aaa;
+}
+
+.container .first-content .image {
+    flex: 1;
+}
+
+.container .first-content .image img {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 500px;
+}
+
+.container .first-content .text-content {
+    flex: 1;
+    padding: 50px;
+}
+
+.container .first-content .text-content h1 {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    font-size: 40px;
+}
+
+.container .first-content .text-content p {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    color: #aaa;
+}
+
+/* Small Screen Styles */
 @media (max-width: 767px) {
-        .nav-bar .container {
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-        }
+    .nav-bar .container {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
 
     h2 {
         margin-top: 10px;
@@ -80,12 +137,38 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        font-family: "Poppins", sans-serif;;
+        font-family: "Poppins", sans-serif;
     }
 
-    .nav-bar input[type="text"], .nav-bar .social-media {
+    .nav-bar input[type="text"],
+    .nav-bar .social-media {
         order: 2;
         margin-bottom: 10px;
     }
 
+    .container .first-content {
+        flex-direction: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container .first-content .image {
+        order: 1;
+        flex: 0 0 100%;
+        width: 100%;
+    }
+
+    .container .first-content .image img {
+        width: 100%;
+        height: auto;
+        background-size: contain;
+
+    }
+
+    .container .first-content .text-content {
+        order: 2;
+        flex: 0 0 100%;
+        width: 100%;
+        padding: 20px;
+    }
 }
