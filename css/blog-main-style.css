@@ -1,3 +1,10 @@
+/* import another css files*/
+@import url(./blog-style.css);
+@import url(./blog-style2.css);
+@import url(./blog-style3.css);
+@import url(./blog-style4.css);
+
+
 /*Footer*/
 .footer {
     margin-top: 100px;
